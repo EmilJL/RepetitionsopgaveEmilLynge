@@ -9,16 +9,21 @@ namespace joyride.Entities
 {
     public enum CategoryOptions
     {
-        Vandforlstelse,
-        Pendulforlystelse,
-        Rutsjebane
+        [Description("Vandforlystelse")]
+        Waterslide,
+        [Description("Pendulforlystelse")]
+        PendulumRide,
+        [Description("Rutsjebane")]
+        RollerCoaster
     }
     public enum StatusOptions
     {
-        Virker,
+        [Description("Virker")]
+        Working,
         [Description("Mangler service")]
-        ManglerService,
-        Nedbrud
+        LacksService,
+        [Description("Nedbrud")]
+        OutOfOrder
     }
 
     public class Ride

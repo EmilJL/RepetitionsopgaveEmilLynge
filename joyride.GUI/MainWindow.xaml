@@ -7,9 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="Forlystelser" HorizontalAlignment="Left" Height="384" Margin="10,29,0,0" VerticalAlignment="Top" Width="436"/>
-        <GroupBox Header="Statistik" HorizontalAlignment="Left" Height="243" Margin="451,29,0,0" VerticalAlignment="Top" Width="334"/>
-        <GroupBox Header="Administration" HorizontalAlignment="Left" Height="136" Margin="451,277,0,0" VerticalAlignment="Top" Width="334"/>
+        <GroupBox Header="Forlystelser" HorizontalAlignment="Left" Height="384" Margin="10,29,0,0" VerticalAlignment="Top" Width="436">
+            <WrapPanel HorizontalAlignment="Left" Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Width="407">
+                <TextBox Height="29" TextWrapping="Wrap" Text="TextBox" Width="308" Margin="0, 0, 7, 0" VerticalContentAlignment="Center"/>
+                <Button Content="Button" Width="89"/>
+                <DataGrid Height="300" Width="406" Margin="0, 14, 0, 0"/>
+            </WrapPanel>
+        </GroupBox>
+        <GroupBox Header="Statistik" HorizontalAlignment="Left" Height="227" Margin="451,29,0,0" VerticalAlignment="Top" Width="334">
+            <WrapPanel HorizontalAlignment="Left" Height="190" Margin="12,20,-4,0" VerticalAlignment="Top" Width="314">
+                <Label Content="Label" Width="154" Height="38"/>
+                <Label Content="Label" Width="150" Height="38" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+                <Label Content="Label" Width="154" Height="38"/>
+                <Label Content="Label" Width="150" Height="38" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+                <Label Content="Label" Width="154" Height="38"/>
+                <Label Content="Label" Width="150" Height="38" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+                <Label Content="Label" Width="154" Height="38"/>
+                <Label Content="Label" Width="150" Height="38" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+                <Label Content="Label" Width="154" Height="38"/>
+                <Label Content="Label" Width="150" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+            </WrapPanel>
+        </GroupBox>
+        <GroupBox Header="Administration" HorizontalAlignment="Left" Height="152" Margin="451,261,0,0" VerticalAlignment="Top" Width="334">
+            <WrapPanel HorizontalAlignment="Left" Height="100" Margin="7,16,0,0" VerticalAlignment="Top" Width="314">
+                <Button Content="Button" Width="99" Height="78" Margin="0, 11, 5, 0"/>
+                <Button Content="Button" Width="99" Height="78" Margin="0, 11, 5, 0"/>
+                <Button Content="Button" Width="99" Height="78" Margin="0, 11, 0, 0"/>
+            </WrapPanel>
+        </GroupBox>
 
     </Grid>
 </Window>

@@ -29,7 +29,7 @@ namespace joyride.DataAccess
             return data.Tables[0].AsEnumerable().Select(dataRow => new Report
             {
                 Id = dataRow.Field<int>("Id"),
-                /* insert ride */
+                RideReportedOn = GetRide(dataRow.Field<int>("RideId")),
                 Status = (StatusOptions)System.Enum.Parse(typeof(StatusOptions), dataRow.Field<string>("Status")),
                 ReportTime = dataRow.Field<DateTime>("ReportTime"),
                 Notes = dataRow.Field<string>("Notes")
